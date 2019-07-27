@@ -1,0 +1,108 @@
+@import "~bootstrap/dist/css/bootstrap.css";
+
+.box1 {
+  border: green solid 2px;
+  width: 200px;
+  height: 200px;
+}
+
+
+
+
+
+
+
+
+
+
+
+@media screen {
+
+}
+.centerwindow {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.loginwindow {
+  box-sizing: content-box;
+  margin-left: 0px;
+  margin-top: 0px;
+  background: lightblue;
+  border: black 1px;
+  padding: 10px 10px 10px 10px;
+}
+
+
+nav {
+  position: absolute;
+  left: 0px;
+  width: 200px;
+}
+section {
+  position: absolute;
+  margin-left: 200px;
+}
+.footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  height: 70px;
+  background-color: white;
+  width: 100%;
+}
+.body {
+  margin-bottom: 120px;
+}
+.box2 {
+  display: inline-block;
+  border: red solid 5px;
+  width: auto;
+  height: auto;
+  margin: 0em;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100;
+  border: 1px red solid;
+}
+
+. test {
+  color: green;
+  border:green solid 5px;
+  width: 500px;
+  height: 500px;
+  margin-left: 20%;
+  padding-top: 20px;
+  padding-left: 20px;
+  margin-left: 200px;
+}
+
+.test2 {
+  color: red;
+  border: red solid 5px;
+  width: 50px;
+  height: 50px;
+  margin-left: 50px;
+}
+
+.relative {
+  position:relative;
+  width: 600px;
+  height: 400px;
+}
+
+.absolute {
+  position: absolute;
+  top: 120px;
+  right: 0px;
+  width: 300px;
+  height: 200px;
+  color: red;
+  border: red solid 5px;
+}

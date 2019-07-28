@@ -6,3 +6,10 @@
   width: 300px;
   border-color: cornflowerblue;
 }
+
+.center {
+  display: flex;
+  justify-content: center;/* m a in axis 居中 ( 水平 居中 ) */
+  /* 不信就取消注释掉以下内容看看 border 效果哈 */
+  /*border: 1px red solid;*/
+}

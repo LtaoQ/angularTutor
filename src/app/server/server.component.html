@@ -1,50 +1,27 @@
-<h4>This is a Component Example. </h4>
-<p> Server with ID {{ serverId }}  is {{ serverStatus }} </p>
-<p> {{ 'Server' }} with ID {{ serverId }}  is {{ serverStatus }} </p>
-<p> {{ 'Server' }} with ID {{ serverId }}  is {{ getServerStatus() }} </p>
+
+<h4>Online Order Here:</h4>
+<div>
+
+</div>
+<div class="center"><button class="btn btn-success" style="width: 300px" (click)="clickBun()">Bun</button></div>
+<div class="center"><button class="btn btn-success" style="width: 300px" (click)="clickPatty()">Patty</button></div>
+<div class="center"><button class="btn btn-success" style="width: 300px" (click)="clickChicken()">Chicken</button></div>
+<div class="center"><button class="btn btn-success" style="width: 300px" (click)="clickCheese()">Cheese</button></div>
+<div class="center"><button class="btn btn-success" style="width: 300px" (click)="clickBacon()">Bacon</button></div>
+<div class="center"><button class="btn btn-success" style="width: 300px" (click)="clickLnT()">Lettuce and Tomato</button></div>
+<div class="center"><button class="btn btn-primary" style="width: 300px" (click)="clickClear()">Clear</button></div>
+<div class="center"><button class="btn btn-primary" style="width: 300px" (click)="clickSubmit()">Submit Order</button></div>
 
 <hr>
-<h4>This is a counter</h4>
-<p> {{ counter }} </p>
-<button class="btn btn-primary" (click)="counterPlus()" style="margin-right: 10px"> Add One</button>
-<button class="btn btn-primary" (click)="resetCounter()"> Reset Counter</button>
-
+<h4>Selected Ingredients</h4>
+<div>
+  <span *ngIf="isBun" class="informBoxBoarder">Bun</span>
+  <span *ngIf="isPatty" class="informBoxBoarder">Patty</span>
+  <span *ngIf="isChicken" class="informBoxBoarder">Chicken</span>
+  <span *ngIf="isCheese" class="informBoxBoarder">Cheese</span>
+  <span *ngIf="isBacon" class="informBoxBoarder">Bacon</span>
+  <span *ngIf="isLnT" class="informBoxBoarder">Lettuce and Tomato</span>
+</div>
 <hr>
-<h4>This is a input Box with Event Binding</h4>
-<div>
-  <span>User Name: </span>
-  <input type="text" (input)="onUpdateUserName($event)">
-</div>
-
-<div>
-  <span>Password: </span>
-  <input type="password">
-</div>
-<div *ngIf="isLogin" class="informBoxBoarder"> You Loggedin as {{ userName }} </div>
-<button class="btn btn-light" (click)="login()" style="margin-right: 10px"> Login </button>
-<button class="btn btn-light" (click)="signOut()"> Sign Out </button>
-
-<hr>
-<h4>This is a input Box with Two Way Data Binding</h4>
-<div>
-  <span>User Name: </span>
-  <input type="text" [(ngModel)]="userName">
-</div>
-
-<div>
-  <span>Password: </span>
-  <input type="password">
-</div>
-<div *ngIf="isLogin" class="informBoxBoarder"> You Loggedin as {{ userName }} </div>
-<button class="btn btn-light" (click)="login()" style="margin-right: 10px"> Login </button>
-<button class="btn btn-light" (click)="signOut()"> Sign Out </button>
-
-<hr>
-<h4>This is a StudentList managed by ngfor loop</h4>
-<div *ngFor="let student of students">
-  <div style="margin-bottom: 2px;border-left: solid 2px; border-right: solid 2px; border-bottom: solid 2px; border-top: solid 2px; display: flex; justify-content: space-between">
-    <div><span style="color: cornflowerblue; margin-right: 5px">Student Name: </span> <span> {{ student.name }}</span></div>
-
-    <div><span style="color: cornflowerblue; margin-right: 5px;">Student Major: </span> <span>{{ student.major }}</span></div>
-  </div>
-</div>
+<h4>Serving:</h4>
+<h3 class="center" *ngIf="isServe">{{serveMsg}}</h3>
